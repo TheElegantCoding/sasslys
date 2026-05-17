@@ -1,8 +1,8 @@
 <img src="./.github/asset/illustration/wave_header.svg" width="100%" />
 
 <h1 id="top" align="center">
-  <img src="./.github/asset/icon/typescript.svg" width="28px" align="center" />
-  Typescript Starter Template
+  <img src="./.github/asset/icon/sass.svg" width="28px" align="center" />
+  Sasslys
 </h1>
 
 <br />
@@ -15,7 +15,7 @@
 
 <img src="./.github/asset/illustration/divider.svg" alt="divider" width="100%" />
 
-<img src="./.github/asset/illustration/starter_ts_cover.svg" width="100%" />
+<img src="./.github/asset/illustration/sass_cover.svg" width="100%" />
 
 <br />
 
@@ -23,7 +23,7 @@
   <img src="./.github/asset/illustration/eslint_badge.svg" height="34px" />&nbsp;&nbsp;&nbsp;
   <img src="./.github/asset/illustration/bun_badge.svg" height="34px" />&nbsp;&nbsp;&nbsp;
   <img src="./.github/asset/illustration/github_badge.svg" height="34px" />&nbsp;&nbsp;&nbsp;
-  <img src="./.github/asset/illustration/typescript_badge.svg" height="34px" />&nbsp;&nbsp;&nbsp;
+  <img src="./.github/asset/illustration/sass_badge.svg" height="34px" />&nbsp;&nbsp;&nbsp;
 </div>
 
 <img src="./.github/asset/illustration/divider.svg" alt="divider" width="100%" />
@@ -36,7 +36,7 @@
 <table border="0">
 <tr>
 <td>
-Zero-config TypeScript template for rapid development. Pre-configured with modern tooling to start coding
+A lightweight, modular Sass framework based on design tokens, utility helpers, and fluid typography for rapid layout development.
 </td>
 </tr>
 </table>
@@ -66,7 +66,10 @@ Zero-config TypeScript template for rapid development. Pre-configured with moder
   Features
 </h2>
 
-[REPLACE with the features of your package]
+- Modular design based on design tokens
+- Utility helpers for rapid layout development
+- Fluid typography for responsive design
+- Lightweight and easy to integrate
 
 <img src="./.github/asset/illustration/divider.svg" alt="divider" width="100%" />
 
@@ -76,6 +79,7 @@ Zero-config TypeScript template for rapid development. Pre-configured with moder
 </h2>
 
 - <img src="./.github/asset/icon/node.svg" width="20px" align="center" /> node >= **22.17.0**
+- <img src="./.github/asset/icon/sass.svg" width="20px" align="center" /> sass >= **1.99.0**
 - <img src="./.github/asset/icon/bun.svg" width="20px" align="center" /> bun >= **1.1.0**
 
 <br />
@@ -90,25 +94,25 @@ Zero-config TypeScript template for rapid development. Pre-configured with moder
 <h3><img src="./.github/asset/icon/bun.svg" width="24px" align="center" /> Bun</h3>
 
 ```bash
-bun i -D [REPLACE_WITH_PACKAGE_NAME]
+bun i -D sasslys
 ```
 
 <h3><img src="./.github/asset/icon/npm.svg" width="24px" align="center" /> Npm</h3>
 
 ```bash
-npm i -D [REPLACE_WITH_PACKAGE_NAME]
+npm i -D sasslys
 ```
 
 <h3><img src="./.github/asset/icon/pnpm.svg" width="24px" align="center" /> Pnpm</h3>
 
 ```bash
-pnpm i -D [REPLACE_WITH_PACKAGE_NAME]
+pnpm i -D sasslys
 ```
 
 <h3><img src="./.github/asset/icon/yarn.svg" width="24px" align="center" /> Yarn</h3>
 
 ```bash
-yarn i -D [REPLACE_WITH_PACKAGE_NAME]
+yarn i -D sasslys
 ```
 
 <br />
@@ -124,7 +128,14 @@ yarn i -D [REPLACE_WITH_PACKAGE_NAME]
   Usage
 </h2>
 
-[REPLACE with usage instructions]
+To use Sasslys in your project, simply import the main Sass file into your stylesheet:
+
+```scss
+@use 'sasslys';
+@use 'sasslys/config';
+```
+
+Sasslys is the default styles, while `sasslys/config` contains the configuration variables that you can customize to fit your project's needs.
 
 <br />
 
@@ -139,7 +150,24 @@ yarn i -D [REPLACE_WITH_PACKAGE_NAME]
   Configuration
 </h2>
 
-[REPLACE with configuration instructions]
+To customize the configuration of Sasslys, you can modify the variables in the `sasslys/config` file. This allows you to tailor the framework to your project's specific needs.
+
+```scss
+@use 'sasslys/config' with (
+  $spacing-2: 0.5rem,
+  $primary-color: #ff5733;
+});
+```
+
+Or you can create a new file and import it before importing the main Sasslys file:
+
+```scss
+@use 'sasslys/config' as *;
+@use 'sasslys';
+
+$spacing-2: 0.5rem;
+$primary-color: #ff5733;
+```
 
 <br />
 
