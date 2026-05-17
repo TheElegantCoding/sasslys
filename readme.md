@@ -15,7 +15,7 @@
 
 <img src="./.github/asset/illustration/divider.svg" alt="divider" width="100%" />
 
-<img src="./.github/asset/illustration/sass_cover.svg" width="100%" />
+<img src="./.github/asset/illustration/sasslys_cover.svg" width="100%" />
 
 <br />
 
