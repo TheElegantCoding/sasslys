@@ -8,6 +8,7 @@
       "@src/*": ["./src/*"]
     },
     "resolveJsonModule": true,
+    "types": ["node"],
     "strict": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
@@ -40,6 +41,7 @@
   "include": [
     "src/**/*",
     "eslint.config.js",
+    "stylelint.config.js",
     "tsup.config.ts"
   ],
   "exclude": ["node_modules", "dist"]
