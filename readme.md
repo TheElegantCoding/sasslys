@@ -153,7 +153,7 @@ Sasslys is the default styles, while `sasslys/config` contains the configuration
 To customize the configuration of Sasslys, you can modify the variables in the `sasslys/config` file. This allows you to tailor the framework to your project's specific needs.
 
 ```scss
-@use 'sasslys/config' with (
+@use 'sasslys/config' with ({
   $spacing-2: 0.5rem,
   $primary-color: #ff5733;
 });
