@@ -5,7 +5,6 @@ const config = eslintConfig({
   stylistic: true,
   unicorn: true,
   yml: true,
-  html: true,
   perfectionist: true,
   typescript: true
 });
