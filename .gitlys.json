@@ -1,7 +1,8 @@
 {
   "lintStaged": {
     "*.ts": "bunx tsc --noEmit",
-    "*.{ts,js,json,yml,yaml}": "bunx eslint --fix"
+    "*.{ts,js,json,yml,yaml}": "bunx eslint --fix",
+    "*.{css,scss}": "bunx stylelint --fix"
   },
   "release": {
     "releaseToGithub": true
