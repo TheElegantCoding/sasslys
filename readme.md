@@ -169,6 +169,8 @@ $spacing-2: 0.5rem;
 $primary-color: #ff5733;
 ```
 
+To see all the available configuration options, please refer to the [Configuration Documentation](./.github/doc.md).
+
 <br />
 
 <img 
